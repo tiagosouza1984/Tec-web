@@ -1,0 +1,186 @@
+
+
+    h1, h2, h3, h4, h5 {
+        margin: 0;
+        font-weight: bold;
+        }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        margin: 0 auto;
+    }
+
+    .header {
+        font-weight: bold;
+        color:darkslategrey;
+        background-color: #ffffff;
+        position: relative;
+        width: calc(100% - 60px);
+        height: 50px;
+        display: block;
+        margin: 0 auto 0 60px;
+        border: 1px solid rgb(212, 212, 212);
+        padding-bottom: 10px;         
+    }
+
+    .menu_nav {
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        float: left;
+        width: 60px;
+        height: 100%;
+        background-color: darkslategrey;
+        display: block;
+        border: 1px thin darkslategrey;
+    }
+    
+    .menu_icon {
+        position: relative;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        width: 60px;
+        height: auto;
+        margin: 10px 0;
+        fill: #ffffff;
+    }
+    
+    .menu_icon  li {
+        display: flex;
+        padding: 0;
+        height: 70px;
+        justify-content: center;
+        align-content: space-around;
+        margin: 0 auto;
+        width: 60px;
+    }
+    
+    .menu_icon li:hover {
+        cursor: pointer;
+        fill: rgb(125, 180, 180);
+    }
+    /* atributos do o corpo central da página*/
+    .body_section{
+        position: fixed;
+        margin: 0 auto 0 62px;
+        color: green;
+        width: calc(100%-60px);
+        background-color: #f5f6f9;
+        height: 100%;
+    }
+
+    .body_content{
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        float: left;
+        margin: 15px 0 0 10px;
+        color: green;
+        box-shadow: 0 2px 2px 2px rgba(173, 173, 173, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.19);
+        max-width: 400px;
+        min-width: 300px;
+        height: 100%;
+        padding: 2px;
+        background-color: #ffffff;
+        visibility: hidden;
+    }
+    
+    .vars {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        float: left;
+        margin: 15px 0 0 10px;
+        color: green;
+        box-shadow: 0 2px 2px 2px rgba(173, 173, 173, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.19);
+        max-width: 400px;
+        min-width: 300px;
+        height: 100%;
+        padding: 2px;
+        background-color: #ffffff;
+        visibility: hidden;
+    }
+    
+    .op_listas {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        float: left;
+        margin: 15px 0 0 10px;
+        color: green;
+        box-shadow: 0 2px 2px 2px rgba(173, 173, 173, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.19);
+        max-width: 400px;
+        min-width: 300px;
+        height: 100%;
+        padding: 2px;
+        background-color: #ffffff;
+        visibility: hidden;
+    }
+    
+    .op_strings {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        float: left;
+        margin: 15px 0 0 10px;
+        color: green;
+        box-shadow: 0 2px 2px 2px rgba(173, 173, 173, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.19);
+        max-width: 400px;
+        min-width: 300px;
+        height: 100%;
+        padding: 2px;
+        background-color: #ffffff;
+        visibility: hidden;
+    }
+
+    .menu_select {
+        z-index: 2;
+        float: left;
+        list-style-type:none;
+        display:flex;
+        flex-direction: column;
+        width:170px;
+        margin: 10px 0 0 10px;
+        background-color: darkslategrey;
+        color: #ffffff;
+        position: absolute;       
+        /*visibility: hidden;*/
+        padding: 0;
+        height:auto;
+    }
+
+    @keyframes myMenuMove {
+        from {left: -900px;}
+        to {left: 0px;}
+    }
+
+     .menu_select {
+        animation-play-state: paused;
+        animation-name: myMenuMove ;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(0.925,0,0,1); 
+    }
+    
+    .menu_select li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 40px;
+        justify-content: left;
+        padding: 10px 0 0 10px;
+    
+    }
+
+    .menu_select li:hover{
+        cursor: pointer;
+        background-color: rgb(112, 197, 197);      
+    }
+    
